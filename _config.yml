@@ -1,0 +1,24 @@
+baseurl: ""
+description: UCB Phi Sigma Rho Website
+color:
+  primary-dark: '#ffffff'
+  links: '#4c0099'
+exclude:
+  - "README.md"
+  - "CHANGELOG.md"
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

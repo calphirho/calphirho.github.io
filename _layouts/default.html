@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    {% include head.html %}
+  </head>
+  <body>
+    <div class="navbar-header">
+        {% include nav.html %}
+    </div>
+    <div class="container">
+      <div class="row">
+        {% if page.hide_sidebar or site.data.theme.hide_sidebar %}
+          <div class="col-sm-12">
+            {{ content }}
+          </div>
+        {% else %}
+          <div class="col-sm-8">
+            {{ content }}
+          </div>
+        {% endif %}
+      </div>
+      <div class="row footer">
+        <div class="col-sm-12 text-center">
+          {% include footer.html %}
+        </div>
+      </div>
+    </div>
+    <script src="{{ "/javascripts/jquery.min.js" | prepend:site.baseurl }}"></script>
+    <script src="{{ "/javascripts/bootstrap.min.js" | prepend:site.baseurl }}"></script>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+---
+layout: default
+---
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+<body> 
+    <div id="content-wrapper1">
+        <div id="welcome" class="container">
+            <div id="title" class="slideUp">
+                <script>
+                $(window).scroll(function() {
+                    $('#title').each(function(){
+                    var imagePos = $(this).offset().top;
+                    var topOfWindow = $(window).scrollTop();
+                        if (imagePos < topOfWindow+100) {
+                            $(this).addClass("slideUp");
+                        }
+                    });
+                });
+                </script>
+                <h3>Engineering Women, <br>Engineering the Future</h3>
+            </div>
+            <p>Welcome to the Phi Sigma Rho Chapter of Alpha Theta at UC Berkeley, a social sorority for women in engineering and engineering technologies.</p>
+        </div>
+    </div>
+    <div id="content-wrapper2">
+        <div id="object-about"  class="container">
+            <div class="col-xs-12 col-sm-4">
+                <h4>Our history</h4>
+                <p>Founded in 1984, Phi Sigma Rho was created by two women who found it difficult to participate in traditional sorority rush due to their demanding academic fields. Phi Sigma Rho is now established at 30 universities across the country.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <h4>Our vision</h4>
+                <p>We continue to encourage our sisters to develop the highest standard of personal integrity, strive for academic excellence, and build friendships that will last a lifetime.</p>
+            </div>
+            <div class="col-xs-12 col-sm-4">
+                <h4>Our values</h4>
+                <p>Duis mollis auctor gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dictum at nisl ac mattis.</p>
+            </div>
+       </div>
+    </div>
+    <div id="content-wrapper3">
+        <div id="object" class="container">
+            <div class="content-volunteer-wrapper">
+                <div id="volunteer-pic" class="slideRight" style="transform: scale(1);">
+                    <script>
+                    var seen = false;
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() < 900 && seen === false) {
+                            $('#volunteer-pic').hide();
+                        } else {
+                            seen = true;
+                            $('#volunteer-pic').show();
+                        }
+                    });
+                    </script>
+                    <div></div>
+                </div>
+                <div id="content-volunteer" class="slideLeft">
+                    <script>
+                    var seen = false;
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() < 900 && seen === false) {
+                            $('#content-volunteer').hide();
+                        } else {
+                            seen = true;
+                            $('#content-volunteer').show();
+                        }
+                    });
+                    </script>
+                    <h2>Philanthropy</h2>
+                    <p>We are committed to volunteering annually with the Berkeley Project. Through making connections with our community, we hope to expand our service and impact. Duis mollis auctor gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dictum at nisl ac mattis.</p>
+                </div>
+            </div>
+            <br><br>
+            <div id="content-social-wrapper">
+                <div id="social-pic" class="slideLeft" style="transform: scale(1);">
+                <script>
+                    var seen = false;
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() < 1000 && seen === false) {
+                            $('#social-pic').hide();
+                        } else {
+                            seen = true;
+                            $('#social-pic').show();
+                        }
+                    });
+                    </script>
+                    <div></div>
+                </div>
+                <div id="content-social" class="slideRight">
+                    <script>
+                    var seen = false;
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() < 1000 && seen === false) {
+                            $('#content-social').hide();
+                        } else {
+                            seen = true;
+                            $('#content-social').show();
+                        }
+                    });
+                    </script>
+                    <h2>Social</h2>
+                    <p>We balance our academic life at Berkeley with fun activities that strengthen our sisterhood. Together, we've ice skated in Oakland, dined at ethnic restaurants, roamed SF, watched the recent Star Wars movie, and pan-fried cookie dough at sleepovers! Duis mollis auctor gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus dictum at nisl ac mattis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
