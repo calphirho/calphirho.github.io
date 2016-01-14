@@ -12,40 +12,75 @@ layout: default
 <div id="content-wrapper2">
     <div id="object-about" class="container">
         <div id="schedule">
-            <div class="line">
-                <i class="fa fa-users fa-5x" style="float: center;"></i> 
+            <div id="line1" class="fadeIn">
+                <script>
+                var seen = false;
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() < 400 && seen === false) {
+                        $('#line1').hide();
+                    } else {
+                        seen = true;
+                        $('#line1').show();
+                    }
+                });
+                </script>
+                <i class="fa fa-users fa-4x" style="float: center;"></i> 
             </div>
         </div>
         <div id="description">
             <div class="center-block">
-                <p>Choose one main package to begin. The one that you choose forms the base of your photobooth package. All main packages come standard with props, equipment, backgrounds, and most importantly, a photographer!</p>
+                <h4>Meet the Chapter</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate molestie purus varius accumsan. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Nullam non porta massa, aliquam interdum ex.</p>
             </div>
         </div>
         <div id="schedule">
-            <div class="line">
-                <i class="fa fa-heart fa-5x" style="float: center;"></i> 
+            <div id="line2" class="fadeIn">
+                <script>
+                var seen = false;
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() < 500 && seen === false) {
+                        $('#line2').hide();
+                    } else {
+                        seen = true;
+                        $('#line2').show();
+                    }
+                });
+                </script>
+                <i class="fa fa-heart fa-4x" style="float: center;"></i> 
             </div>
         </div>
         <div id="description">
             <div class="center-block">
-                <p>Choose one main package to begin. The one that you choose forms the base of your photobooth package. All main packages come standard with props, equipment, backgrounds, and most importantly, a photographer!</p>
+                <h4>Info Night</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate molestie purus varius accumsan. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Nullam non porta massa, aliquam interdum ex.</p>
             </div>
         </div>
         <div id="schedule">
-            <div class="line">
-                <i class="fa fa-cogs fa-5x" style="float: center;"></i> 
+            <div id="line3" class="fadeIn">
+                <script>
+                var seen = false;
+                $(window).scroll(function() {
+                    if ($(window).scrollTop() < 600 && seen === false) {
+                        $('#line3').hide();
+                    } else {
+                        seen = true;
+                        $('#line3').show();
+                    }
+                });
+                </script>
+                <i class="fa fa-cogs fa-4x" style="float: center;"></i> 
             </div>
         </div>
         <div id="description">
             <div class="center-block">
-                <p>Choose one main package to begin. The one that you choose forms the base of your photobooth package. All main packages come standard with props, equipment, backgrounds, and most importantly, a photographer!</p>
+                <h4>Bid Night</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vulputate molestie purus varius accumsan. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam erat volutpat. Nullam non porta massa, aliquam interdum ex.</p>            
             </div>
         </div>
-        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
     </div>
 </div>
 <div id="content-wrapper3">
-    <div id="object"  class="container">
+    <div id="object" class="container">
         <img src="../images/recruitment1.jpg" width="250" height="200" />
         <img src="../images/recruitment5.jpg" width="280" height="200" />
         <img src="../images/recruitment7.jpg" width="280" height="200" />
@@ -54,6 +89,8 @@ layout: default
         <img src="../images/recruitment6.jpg" width="280" height="200" />
         <img src="../images/recruitment3.jpg" width="280" height="200" />
         </a>
+        <div id="icon-credit">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a></div>
     </div>
 </div>
+
 </body> 
