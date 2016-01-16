@@ -115,7 +115,6 @@ nav ul {
     border-bottom: 1px solid #bdbdbd;
   }
 }
-
 .menu-block h2 {
   font-size: 2.75rem;
   letter-spacing: 0.25rem;
@@ -200,7 +199,6 @@ a.button {
 }
 #content-wrapper3 {
   color: inherit;
-  height: auto;
   background-color: #FFF;
   padding: 20px 0px 40px;
   margin: 35px auto;
@@ -228,9 +226,8 @@ a.button {
   color: inherit;
   max-height: 450px;
   background-color: #FFF;
-  overflow: hidden;
   width: 80%;
-  padding: 6em 100px;
+  padding: em 100px;
   text-align: center;
 }
 #content-social {
@@ -347,32 +344,32 @@ span.text-content span {
 }
 /* Recruitment Section */
 #description {
-    border-right: 5px solid #4b0099;
-    float: right;
-    width: 60%;
-    padding-right: 20%;
-    margin-right: 10%;
+  border-right: 5px solid #4b0099;
+  float: right;
+  width: 60%;
+  padding-right: 20%;
+  margin-right: 10%;
 }
 .center-block {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 #schedule {
-    clear: both;
-    width: 10%;
-    float: right;
+  clear: both;
+  width: 10%;
+  float: right;
 }
 #schedule i {
-    vertical-align: middle;
+  vertical-align: middle;
 }
-#schedule #line1, #schedule #line2, #schedule #line3 {
+#schedule #line {
   color: #4b0099;
   margin: 1.5rem -4rem 1.5rem;
   position: absolute;
   width: 5%;
 }
-#schedule #line1 i, #schedule #line2 i, #schedule #line3 i {
+#schedule #line i {
   border: 5px solid #4b0099;
   padding: 20px;
   border-radius: 50%;
@@ -444,12 +441,21 @@ justin@justinaguilar.com
 .fadeIn{
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn; 
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
 
   animation-duration: 1.5s; 
   -webkit-animation-duration: 1.5s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
 
   animation-timing-function: ease-in-out; 
   -webkit-animation-timing-function: ease-in-out;   
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;  
 
   visibility: visible !important; 
 }
@@ -491,13 +497,22 @@ justin@justinaguilar.com
 }
 .slideLeft{
   animation-name: slideLeft;
-  -webkit-animation-name: slideLeft;  
+  -webkit-animation-name: slideLeft;
+  -moz-animation-name: slideLeft;
+  -ms-animation-name: slideLeft;
+  -o-animation-name: slideLeft;
 
   animation-duration: 1s; 
   -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
 
   animation-timing-function: ease-in-out; 
-  -webkit-animation-timing-function: ease-in-out;   
+  -webkit-animation-timing-function: ease-in-out; 
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;  
 
   visibility: visible !important; 
 }
@@ -546,12 +561,21 @@ justin@justinaguilar.com
 .slideRight{
   animation-name: slideRight;
   -webkit-animation-name: slideRight; 
+  -moz-animation-name: slideRight;
+  -ms-animation-name: slideRight;
+  -o-animation-name: slideRight;  
 
   animation-duration: 1s; 
   -webkit-animation-duration: 1s;
+  -moz-animation-timing-duration: 1s;
+  -ms-animation-timing-duration: 1s;
+  -o-animation-timing-duration: 1s;  
 
   animation-timing-function: ease-in-out; 
   -webkit-animation-timing-function: ease-in-out;   
+  -moz-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;  
 
   visibility: visible !important; 
 }
@@ -600,12 +624,21 @@ justin@justinaguilar.com
 .slideUp{
   animation-name: slideUp;
   -webkit-animation-name: slideUp;  
+  -moz-animation-name: slideUp;
+  -ms-animation-name: slideUp;
+  -o-animation-name: slideUp;  
 
   animation-duration: 1s; 
   -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;  
 
   animation-timing-function: ease;  
   -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  -o-animation-timing-function: ease;  
 
   visibility: visible !important;     
 }
