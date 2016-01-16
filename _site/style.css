@@ -227,7 +227,6 @@ a.button {
   max-height: 450px;
   background-color: #FFF;
   width: 80%;
-  padding: em 100px;
   text-align: center;
 }
 #content-social {
@@ -278,6 +277,7 @@ a.button {
   background: transparent url("../images/iceskate.jpg") no-repeat scroll -52px / cover;
 }
 .col-sm-4, .col-xs-12 {
+  padding-top: 100px;
   margin-right: 20px;
   margin-left: 20px;
   display: inline-block;
