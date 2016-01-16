@@ -4,6 +4,7 @@ layout: default
 ---
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body> 
     <div id="content-wrapper1">
@@ -46,21 +47,13 @@ layout: default
             <div class="content-volunteer-wrapper">
                 <div id="volunteer-pic" class="slideRight" style="transform: scale(1);">
                     <script>
-                    // var seen = false;
-                    // $(window).scroll(function() {
-                    //     if ($(window).scrollTop() < 700 && seen === false) {
-                    //         $('#volunteer-pic').hide();
-                    //     } else {
-                    //         seen = true;
-                    //         $('#volunteer-pic').show();
-                    //     }
-                    // });
-                    $('#animatedElement').each(function(){
-                    var imagePos = $(this).offset().top;
-
-                    var topOfWindow = $(window).scrollTop();
-                        if (imagePos < topOfWindow+700) {
-                            $(this).addClass("slideRight");
+                    var seen = false;
+                    $(window).scroll(function() {
+                        if ($(window).scrollTop() < 700 && seen === false) {
+                            $('#volunteer-pic').hide();
+                        } else {
+                            seen = true;
+                            $('#volunteer-pic').show();
                         }
                     });
                     </script>
