@@ -140,7 +140,6 @@ nav ul {
 }
 #title {
   margin: 3em;
-  visibility: hidden;
 }
 .menu-block .icon {
   text-decoration: none;
@@ -254,7 +253,7 @@ nav ul {
   width: 300px;
   border-radius: 50%;
   border: 2px solid #bdbdbd;
-  background: transparent url("../images/berkproj.jpg") no-repeat scroll -45px / cover;
+  background: transparent url("../img/berkproj.jpg") no-repeat scroll -45px / cover;
 }
 #social-pic {
   float: right !important;
@@ -269,7 +268,7 @@ nav ul {
   width: 300px;
   border-radius: 50%;
   border: 2px solid #bdbdbd;
-  background: transparent url("../images/iceskate.jpg") no-repeat scroll -52px / cover;
+  background: transparent url("../img/iceskate.jpg") no-repeat scroll -52px / cover;
 }
 .col-sm-4, .col-xs-12 {
   padding-top: 100px;
@@ -290,7 +289,7 @@ nav ul {
 }
 /* About Section */
 /*.about {
-    background-image: linear-gradient(80deg, rgba(85, 26, 139, 0.7), rgba(255, 215, 0, 0.5)), url("../images/about.jpg");
+    background-image: linear-gradient(80deg, rgba(85, 26, 139, 0.7), rgba(255, 215, 0, 0.5)), url("../img/about.jpg");
     background-origin: margin-box, padding-box;
     background-position: cover;
     background-repeat: repeat, no-repeat;
@@ -404,16 +403,6 @@ ul.img-list li:hover span.text-content {
   margin-right: auto;
   margin-left: auto;
 }
-#icon-credit {
-  display: block;
-  padding-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
-}
-#icon-credit a {
-  text-decoration: none;
-  color: #bdbdbd;
-}
 /* Footer */
 #footer-wrapper {
   border-top: 1px solid #E8E8E8;
@@ -445,26 +434,6 @@ ul.img-list li:hover span.text-content {
   margin: 15px;
 }
 
-/* 
-Credits to the CSS below: 
-==============================================
-CSS3 ANIMATION CHEAT SHEET
-==============================================
-
-Made by Justin Aguilar
-
-www.justinaguilar.com/animations/
-
-Questions, comments, concerns, love letters:
-justin@justinaguilar.com
-==============================================
-*/
-.fadeIn{
-  animation-name: fadeIn;
-  -webkit-animation-name: fadeIn; 
-  -moz-animation-name: fadeIn;
-  -ms-animation-name: fadeIn;
-  -o-animation-name: fadeIn;
 
   animation-duration: 1.5s; 
   -webkit-animation-duration: 1.5s;
@@ -516,151 +485,91 @@ justin@justinaguilar.com
     opacity: 1; 
   }   
 }
-.slideLeft{
-  animation-name: slideLeft;
-  -webkit-animation-name: slideLeft;
-  -moz-animation-name: slideLeft;
-  -ms-animation-name: slideLeft;
-  -o-animation-name: slideLeft;
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
 
   animation-duration: 1s; 
   -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;
 
-  animation-timing-function: ease-in-out; 
-  -webkit-animation-timing-function: ease-in-out; 
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;  
-
-  visibility: visible !important; 
+  animation-timing-function: ease-in-out;  
+  -webkit-animation-timing-function: ease-in-out;
 }
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
 
-@keyframes slideLeft {
-  0% {
-    transform: translateX(150%);
-  }
-  50%{
-    transform: translateX(-8%);
-  }
-  65%{
-    transform: translateX(4%);
-  }
-  80%{
-    transform: translateX(-4%);
-  }
-  95%{
-    transform: translateX(2%);
-  }     
-  100% {
-    transform: translateX(0%);
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 
-@-webkit-keyframes slideLeft {
-  0% {
-    -webkit-transform: translateX(150%);
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
   }
-  50%{
-    -webkit-transform: translateX(-8%);
-  }
-  65%{
-    -webkit-transform: translateX(4%);
-  }
-  80%{
-    -webkit-transform: translateX(-4%);
-  }
-  95%{
-    -webkit-transform: translateX(2%);
-  }     
-  100% {
-    -webkit-transform: translateX(0%);
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
-.slideRight{
-  animation-name: slideRight;
-  -webkit-animation-name: slideRight; 
-  -moz-animation-name: slideRight;
-  -ms-animation-name: slideRight;
-  -o-animation-name: slideRight;  
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
 
   animation-duration: 1s; 
   -webkit-animation-duration: 1s;
-  -moz-animation-timing-duration: 1s;
-  -ms-animation-timing-duration: 1s;
-  -o-animation-timing-duration: 1s;  
 
-  animation-timing-function: ease-in-out; 
-  -webkit-animation-timing-function: ease-in-out;   
-  -moz-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
-  -o-animation-timing-function: ease-in-out;  
+  animation-timing-function: ease-in-out;  
+  -webkit-animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
 
-  visibility: visible !important; 
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
-@keyframes slideRight {
-  0% {
-    transform: translateX(-150%);
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
   }
-  50%{
-    transform: translateX(8%);
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
-  65%{
-    transform: translateX(-4%);
-  }
-  80%{
-    transform: translateX(4%);
-  }
-  95%{
-    transform: translateX(-2%);
-  }     
-  100% {
-    transform: translateX(0%);
-  } 
 }
 
-@-webkit-keyframes slideRight {
-  0% {
-    -webkit-transform: translateX(-150%);
-  }
-  50%{
-    -webkit-transform: translateX(8%);
-  }
-  65%{
-    -webkit-transform: translateX(-4%);
-  }
-  80%{
-    -webkit-transform: translateX(4%);
-  }
-  95%{
-    -webkit-transform: translateX(-2%);
-  }     
-  100% {
-    -webkit-transform: translateX(0%);
-  }
-}
 .slideUp{
   animation-name: slideUp;
   -webkit-animation-name: slideUp;  
-  -moz-animation-name: slideUp;
-  -ms-animation-name: slideUp;
-  -o-animation-name: slideUp;  
 
   animation-duration: 1s; 
   -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  -o-animation-duration: 1s;  
 
   animation-timing-function: ease;  
   -webkit-animation-timing-function: ease;
-  -moz-animation-timing-function: ease;
-  -ms-animation-timing-function: ease;
-  -o-animation-timing-function: ease;  
-
   visibility: visible !important;     
 }
 
@@ -704,4 +613,48 @@ justin@justinaguilar.com
   100% {
     -webkit-transform: translateY(0%);
   } 
+}
+.pulse {
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+
+  animation-duration: 1s; 
+  -webkit-animation-duration: 1s;
+
+  animation-timing-function: ease;  
+  -webkit-animation-timing-function: ease;
+}
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
 }
